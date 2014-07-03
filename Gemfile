@@ -29,6 +29,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.99.0'
   gem 'shoulda-matchers'
   gem 'cucumber'
+  gem 'mocha'
 end
 
 # Use ActiveModel has_secure_password
