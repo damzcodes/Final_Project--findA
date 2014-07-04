@@ -28,7 +28,8 @@ gem 'spring',        group: :development
 group :development, :test do
   gem 'rspec-rails', '~> 2.99.0'
   gem 'shoulda-matchers'
-  gem 'cucumber'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
   gem 'mocha'
 end
 
