@@ -1,26 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-      <meta charset="utf-8">
-      <title>findA</title>
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    </head>
-
-    <body>
-        <h1> findA </h1> 
-        <p> Your app for finding your closests Adventist churches and events. </p> 
-
-        <nav id="navigation">
-            <%= link_to "Login with Facebook", authorise_fb_attendee_index_path %>
-        </nav>
 
 
+<body>
+  <main class="home">
+    <div class="content">
+      <h1 class="title"> findA </h1>
+      <p class="tagline"> Your app for finding your closests Adventist churches and events. </p>  
+      <nav id="navigation">
+        <ul>
+          <li class="one"> <%= link_to "Church Login", new_church_session_path %> </li>
+          <li class="two"> <%= link_to "Login with Facebook", authorise_fb_attendee_index_path %> </li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
 
-        <section id="footer">
-        </section>
+      
+    </div>
+
+    </main>
+
+    <section id="footer">
+    </section>
 
 
-    </body>
+</body>
 
 </html>
