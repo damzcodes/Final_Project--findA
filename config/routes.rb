@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  root to: 'attendee#index'
-  resources :attendee, :only => [:index, :create, :show, :delete]do
+  devise_for :churches
+  root to: 'home#index'
+
+  resources :home, :only => [:index]
+  
+  resources :attendee, :only => [:index, :create, :show, :delete] do
     collection do
       get :authorise_fb    
     end
