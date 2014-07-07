@@ -1,9 +1,12 @@
 class AttendeeController < ApplicationController
 
 	def index
-		render :index
+		
 	end
 
+	def show
+		@attendee = Attendee.find(params[:id])
+	end
 		
 	def authorise_fb
 		redirect_to fb_oauth_client.auth_code.authorize_url(
@@ -32,7 +35,7 @@ class AttendeeController < ApplicationController
 		@attendee.access_token = access_token.token
 		@attendee.save!
 
-		redirect_to attendee_index_path
+		redirect_to home_index_path
 	end
 
 	private

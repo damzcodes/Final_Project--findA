@@ -15,5 +15,6 @@ Rails.application.routes.draw do
     :as => :fb_oauth_callback
   }
 
-  resources :church, :only => [:index, :create, :show]
+  resources :church, :only => [:index, :create, :show, :delete]
+  resources :events, :only => [:index, :create, :show, :delete]
 end

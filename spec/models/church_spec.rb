@@ -13,4 +13,8 @@ describe Church do
 			end
 
 		end
+
+		it {should have_many(:church_events)}
+		it {should have_many(:events).through(:church_events)}
+
 end

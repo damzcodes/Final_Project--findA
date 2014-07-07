@@ -1,3 +1,20 @@
-// Place all the styles related to the attendee controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.show{
+	background-color: white;
+}
+.event{
+	background-color: red;
+	width: 300px;
+	height: 300px;
+}
+
+.map{
+	background-color: yellow;
+	width: 300px;
+	height: 300px;
+}
+
+.calendar{
+	background-color: green;
+	width: 300px;
+	height: 300px;
+}

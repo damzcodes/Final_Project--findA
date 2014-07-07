@@ -18,6 +18,9 @@ class Church < ActiveRecord::Base
 			if c.children[5] != nil
 				@phone = c.children[5].text.chomp.strip.gsub(") Phone: ", "")
 			end
+			if c.children[??] != nil
+				@email = ""
+			end
 			church = Church.new
 			church.name = @name
 			church.address = @address 

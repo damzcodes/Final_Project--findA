@@ -1,15 +1,100 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+.home{
+	background-color: #CCFF99;
+	width: 100%;
+	max-height: 100%;
+
+}
+
+.content{
+	text-align: center;
+	text-decoration: none;
+	margin-top: 15%;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 5rem;
+	font: white;
+	padding: 0%;
+	margin-bottom: -2%;
+
+}
+
+p{
+	font-family: 'PT Serif', sans-serif;
+	font-size: 1rem;
+	padding: 0%;
+}
+
+ul{
+	list-style-type: none;
+	margin-left: 37%;
+}
+
+li{
+	float: left;
+}
+
+a{
+	text-decoration: none;
+}
+
+.one{
+	list-style-position: inside;
+	margin-right: -16%;
+}
+
+.two{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+#navigation{
+	text-align: centre;
+}
+
+.show{
+	background-color: white;
+}
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	font-size: 4rem;
+}
+
+#profile_content{
+	margin-top: 8%;
+	margin-left: 10px;
+}
+#events{
+	background-color: red;
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	float: left;
+}
+ 
+#map_n_cal{
+	float: right;
+	margin-right: 5%;
+}
+
+#map{
+	background-color: yellow;
+	width: 624px;
+	height: 424px;
+	display: block;
+	margin-bottom: 5%;
+}
+
+#calendar{
+	background-color: green;
+	width: 624px;
+	height: 424px;
+	display: inline-block;
+}
+
+
+.clear {
+  clear: both;
+}
