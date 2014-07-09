@@ -1,6 +1,6 @@
 Feature: Event Creation
 
-	@wip 
+
 	Scenario: A church creates an event
 		Given a church exists
 		Given a church is on the church profile page
