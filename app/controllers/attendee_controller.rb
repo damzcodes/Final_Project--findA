@@ -6,6 +6,7 @@ class AttendeeController < ApplicationController
 
 	def show
 		@attendee = Attendee.find(params[:id])
+		@events = Event.all
 	end
 		
 	def authorise_fb
@@ -34,6 +35,8 @@ class AttendeeController < ApplicationController
 
 		@attendee.access_token = access_token.token
 		@attendee.save!
+
+		session[:attendee_id] = @attendee.id
 
 		redirect_to home_index_path
 	end
