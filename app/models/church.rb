@@ -4,6 +4,7 @@ class Church < ActiveRecord::Base
 
 	has_many :events
 	has_one :pastor
+	validate :name, presence: true
 
 	def self.churches_list
 		doc = Nokogiri::HTML(open("http://www.adventistchurches.org.uk/churches.php?Field=SEC%20(London)"))

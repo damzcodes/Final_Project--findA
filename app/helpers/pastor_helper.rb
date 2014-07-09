@@ -1,0 +1,2 @@
+module PastorHelper
+end
