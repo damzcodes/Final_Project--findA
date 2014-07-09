@@ -7,6 +7,7 @@ class ChurchController < ApplicationController
 	def show
 		@church = Church.find(params[:id])
 		@event = Event.create!
+		@events = Event.all
 	end
 
 	# private
