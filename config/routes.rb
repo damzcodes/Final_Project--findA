@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :pastors
   devise_for :churches
   root to: 'home#index'
 
@@ -17,4 +18,5 @@ Rails.application.routes.draw do
 
   resources :church, :only => [:index, :create, :show, :delete]
   resources :event, :only => [:index, :create, :new, :show, :edit, :update, :delete]
+  resources :event_attendee, :only => [:create]
 end
