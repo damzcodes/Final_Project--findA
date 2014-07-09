@@ -1,14 +1,14 @@
 	<div class="event_form">
 
-	<%= form_for @event, :url => event_index_path do |e| %>
+	<%= form_for @event, :remote => true, :url => event_index_path do |e| %>
 				<%= field_set_tag do %>
 					<%= e.label :name %>
 					<%= e.text_field :name %>
 				<% end %>
 
 				<%= field_set_tag do %>
-					<%= e.label :type %>
-					<%= e.text_field :type %>
+					<%= e.label :event_type %>
+					<%= e.text_field :event_type %>
 				<%end %>
 
 				<%= field_set_tag do %>
