@@ -2,7 +2,7 @@ class EventController < ApplicationController
 
 	def index
 		@events = Event.all
-		binding.pry
+
 	end
 
 	def show
@@ -27,7 +27,7 @@ class EventController < ApplicationController
 
 
 	def edit
-		@event = Event.find_or_create_by!(name: Event.name)
+		@event = Event.find_or_create_by!(name: event.name)
 	end
 
 private

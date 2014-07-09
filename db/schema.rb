@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140709110141) do
+ActiveRecord::Schema.define(version: 20140709120242) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,8 @@ ActiveRecord::Schema.define(version: 20140709110141) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.float    "lat"
+    t.float    "lng"
   end
 
   add_index "churches", ["email"], name: "index_churches_on_email", unique: true, using: :btree
@@ -67,6 +69,8 @@ ActiveRecord::Schema.define(version: 20140709110141) do
     t.string   "date"
     t.string   "address"
     t.string   "event_type"
+    t.float    "lat"
+    t.float    "lng"
   end
 
 end
