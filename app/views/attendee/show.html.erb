@@ -3,11 +3,27 @@
 	<h2>Hi <%= @attendee.name %></h2>
 
 	<div id="profile_content">
-		<div id="events">These are events</div>
+		
+		<h3> All events </h3>
+			<ul id="events">
+			<% @events.each do |event| %>
+				<li class="event" data-latitude="<%=event.lat%>" data-longitude="<%=event.lng%>">
+					<%= event.name %> <%= event.event_type %> <%= event.date %> 
+					<%= button_to "Attend", event_attendee_index_path(event_id: event.id, attendee_id: session[:attendee_id]), remote: true %>
+				</li> </br>
+			<% end %>
+			</ul>
+		
+		
+		<div id="my_events">
+			<h3> My Events </h3>
+			<ul id="my_event_list">
+			</ul>
+		</div>
 
 		<div id="map_n_cal">
 			<div id="map">This is the map</div>
-			<div id="calendar">This is the calendar</div>
+<!-- 			<div id="calendar">This is the calendar</div> -->
 		</div>
 
 		<div class="clear"></div>

@@ -12,6 +12,10 @@
   <div><%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
 
+  <div><%= f.label :church_id, "Please select your church" %><br/>
+  <%=f.collection_select(:church_id, Church.all, :id, :name)%>
+  </div>
+
   <div><%= f.submit "Sign up" %></div>
 <% end %>
 

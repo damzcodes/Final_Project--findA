@@ -13,10 +13,23 @@
 		<div id="event_create"> 
 		</div>
 
-		<div id="map_n_cal">
-			
-			<div id="calendar">This is the calendar</div>
-		</div>
+		<div id="map"> </div>
+
+		<ul>
+<% @events.each do |event| %>
+<li class="events" data-latitude="<%=event.lat%>" data-longitude="<%=event.lng%>">
+
+
+	<%= event.name %> <%= event.event_type %> <%= event.date %>
+	
+	<%=link_to 'Edit', edit_event_path(:id)%>
+	
+	<%=link_to 'Show', event_path(:id)%>
+	</li> <br/>
+
+<% end %>
+</ul>
+
 
 		<div class="clear"></div>
 	</div>

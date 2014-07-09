@@ -36,6 +36,10 @@
 					<%= e.text_field :end_time %>
 				<% end %>
 
+				<%= field_set_tag do %>
+					<%= e.hidden_field :church_id %>
+				<% end %>
+
 				<%= e.submit %>
 			<% end %> 
 			</div>
