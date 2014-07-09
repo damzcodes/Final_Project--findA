@@ -4,50 +4,14 @@
 	<h2> <%= @church.name%> profile </h2>
 
 	<div id="profile_content">
-	<!-- 	<%= link_to 'Create Event', events_path, :remote => true %> -->
+		
 
 
+		<%= link_to 'Events', event_index_path %>
+		<%= link_to 'Create Event', new_event_path, :remote => true, :id => 'create_event' %>
 
-		<div id="create_form" class="modal_window">
-			<b onclick="hideModal(this)" class="close">Close</b>
-
-			<%= form_for @event do |e| %>
-				<%= field_set_tag do %>
-					<%= e.label :name %>
-					<%= e.text_field :name %>
-				<% end %>
-
-				<%= field_set_tag do %>
-					<%= e.label :type %>
-					<%= e.text_field :type %>
-				<% end %>
-
-				<%= field_set_tag do %>
-					<%= e.label :address %>
-					<%= e.text_field :address %>
-				<% end %>
-
-				<%= field_set_tag do %>
-					<%= e.label :description %>
-					<%= e.text_field :description %>
-				<% end %>
-
-				<%= field_set_tag do %>
-					<%= e.label :start_time %>
-					<%= e.text_field :start_time %>
-				<% end %>
-
-				<%= field_set_tag do %>
-					<%= e.label :end_time %>
-					<%= e.text_field :end_time %>
-				<% end %>
-
-				<%= e.submit %>
-			<% end %>
-
+		<div id="event_create"> 
 		</div>
-
-		<div id="events">These are events</div>
 
 		<div id="map_n_cal">
 			<div id="map">This is the map</div>
@@ -59,14 +23,6 @@
 
 </main>
 
-<script>
-	function showModal(){
-		var modal = document.getElementById("create_form");
-		modal.removeAttribute("class");
-	},
 
-	function hideModal(b){
-		var modalClose = b.parentElement.parentElement
-		modalClose.setAttribute("class", "hidden");
-	}
-</script>
+
+

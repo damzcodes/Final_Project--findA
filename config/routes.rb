@@ -16,5 +16,5 @@ Rails.application.routes.draw do
   }
 
   resources :church, :only => [:index, :create, :show, :delete]
-  resources :events, :only => [:index, :create, :show, :delete]
+  resources :event, :only => [:index, :create, :new, :show, :edit, :update, :delete]
 end

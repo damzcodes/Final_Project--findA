@@ -1,0 +1,41 @@
+	<div class="event_form">
+
+	<%= form_for @event, :url => event_index_path do |e| %>
+				<%= field_set_tag do %>
+					<%= e.label :name %>
+					<%= e.text_field :name %>
+				<% end %>
+
+				<%= field_set_tag do %>
+					<%= e.label :type %>
+					<%= e.text_field :type %>
+				<%end %>
+
+				<%= field_set_tag do %>
+					<%= e.label :address %>
+					<%= e.text_field :address %>
+				<% end %>
+
+				<%= field_set_tag do %>
+					<%= e.label :description %>
+					<%= e.text_field :description %>
+				<% end %>
+
+				<%= field_set_tag do %>
+					<%= e.label :date %>
+					<%= e.text_field :date %>
+				<% end %>
+
+				<%= field_set_tag do %>
+					<%= e.label :start_time %>
+					<%= e.text_field :start_time %>
+				<% end %>
+
+				<%= field_set_tag do %>
+					<%= e.label :end_time %>
+					<%= e.text_field :end_time %>
+				<% end %>
+
+				<%= e.submit %>
+			<% end %> 
+			</div>
