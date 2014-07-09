@@ -14,7 +14,7 @@ describe Church do
 
 		end
 
-		it {should have_many(:church_events)}
-		it {should have_many(:events).through(:church_events)}
+		it {should have_many(:events)}
+		it {should have_one(:pastors)}
 
 end

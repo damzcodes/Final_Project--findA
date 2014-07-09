@@ -1,10 +1,9 @@
 class Church < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
-	has_many :church_events
-	has_many :events, :through => :church_events
+
+	has_many :events
+	has_one :pastor
 
 	def self.churches_list
 		doc = Nokogiri::HTML(open("http://www.adventistchurches.org.uk/churches.php?Field=SEC%20(London)"))
@@ -18,9 +17,9 @@ class Church < ActiveRecord::Base
 			if c.children[5] != nil
 				@phone = c.children[5].text.chomp.strip.gsub(") Phone: ", "")
 			end
-			if c.children[??] != nil
-				@email = ""
-			end
+			# if c.children[??] != nil
+			# 	@email = ""
+			# end
 			church = Church.new
 			church.name = @name
 			church.address = @address 

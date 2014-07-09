@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe Events do
-  it {should have_many(:church_events)}
-	it {should have_many(:churches).through(:church_events)}
+	it {should belongs_to(:churches)}
+	it {should have_many(:event_attendee)}
+	it {should have_many(:attendees).through(:event_attendee)}
 end

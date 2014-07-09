@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140709120242) do
+ActiveRecord::Schema.define(version: 20140709160038) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(version: 20140709120242) do
   create_table "church_events", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "event_id"
   end
 
   create_table "churches", force: true do |t|
@@ -51,9 +50,6 @@ ActiveRecord::Schema.define(version: 20140709120242) do
     t.float    "lng"
   end
 
-  add_index "churches", ["email"], name: "index_churches_on_email", unique: true, using: :btree
-  add_index "churches", ["reset_password_token"], name: "index_churches_on_reset_password_token", unique: true, using: :btree
-
   create_table "event_attendees", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -71,6 +67,15 @@ ActiveRecord::Schema.define(version: 20140709120242) do
     t.string   "event_type"
     t.float    "lat"
     t.float    "lng"
+  end
+
+  create_table "pastors", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
