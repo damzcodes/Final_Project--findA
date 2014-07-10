@@ -41,6 +41,7 @@ gem 'will_paginate', '~> 3.0'
 gem 'pry'
 gem 'oauth2'
 gem 'nokogiri'
+gem 'rails_12factor', group: :production
 gem 'rails_stdout_logging'
 gem 'launchy'
 gem 'simplecov', :require => false, :group => :test
