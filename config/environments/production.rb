@@ -80,4 +80,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+   config.fb_id = ENV['fb_id']
+  config.fb_secret = ENV['fb_secret']
 end
