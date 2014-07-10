@@ -43,6 +43,7 @@ gem 'oauth2'
 gem 'nokogiri'
 gem 'rails_stdout_logging'
 gem 'launchy'
+gem 'simplecov', :require => false, :group => :test
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
