@@ -3,6 +3,14 @@
 	<h2>Hi <%= @attendee.name %></h2>
 
 	<div id="profile_content">
+
+	<div id='search_field'>
+	<%= form_tag(search_index_path, :method => :get) do %>
+	  <%= label_tag(:location, "Search:") %>
+	  <%= text_field_tag(:location) %>
+	  <%= submit_tag("Search") %>
+	<% end %>
+	</div>
 		
 		<h3> All events </h3>
 			<ul id="events">

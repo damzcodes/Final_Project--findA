@@ -1,0 +1,12 @@
+
+<h2> Local Churches </h2>
+
+<div id="local_churches">
+<% @search.each do |church| %>
+	<ul>
+		<div>
+			<li><%= church.name %> </li> <br/>
+			<li><%= church.address %></li>
+		</div>
+	</ul>
+<%end%>
