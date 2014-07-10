@@ -1,0 +1,326 @@
+{
+  "Cucumber Features": {
+    "coverage": {
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/models/pastor.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/models/church.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/models/attendee.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/controllers/attendee_controller.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/attendee_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/church_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/event_attendee_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/pastor_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/models/event.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/controllers/search_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1405009157
+  },
+  "RSpec": {
+    "coverage": {
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/models/pastor.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/models/church.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        97,
+        96,
+        96,
+        95,
+        null,
+        96,
+        95,
+        null,
+        null,
+        null,
+        null,
+        96,
+        96,
+        96,
+        96,
+        96,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/attendee_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/church_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/event_attendee_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/helpers/pastor_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/controllers/event_attendee_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/controllers/home_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/controllers/pastor_controller.rb": [
+        1,
+        null,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/models/attendee.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/models/church_events.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/models/event.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/damilolaodelola/projects/Final_Project/findA/app/models/event_attendee.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1405009302
+  }
+}
