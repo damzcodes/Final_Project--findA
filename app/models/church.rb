@@ -5,6 +5,8 @@ class Church < ActiveRecord::Base
 	has_many :events
 	has_one :pastor
 	validate :name, presence: true
+	geocoded_by :address, :latitude => :lat, :longitude => :lng
+	after_validation :geocode 
 
 	def self.churches_list
 		doc = Nokogiri::HTML(open("http://www.adventistchurches.org.uk/churches.php?Field=SEC%20(London)"))
@@ -27,8 +29,7 @@ class Church < ActiveRecord::Base
 			church.phone = @phone
 			church.save!
 		end
-
-		
 	end
+
 
 end
