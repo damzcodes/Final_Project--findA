@@ -1,5 +1,7 @@
 class AttendeeController < ApplicationController
 
+
+
 	def index
 		
 	end
@@ -7,6 +9,7 @@ class AttendeeController < ApplicationController
 	def show
 		@attendee = Attendee.find(params[:id])
 		@events = Event.all
+		# layout :determine_layout
 	end
 		
 	def authorise_fb
@@ -38,7 +41,7 @@ class AttendeeController < ApplicationController
 
 		session[:attendee_id] = @attendee.id
 
-		redirect_to home_index_path
+		redirect_to attendee_path(@attendee)
 	end
 
 	private
@@ -50,6 +53,10 @@ class AttendeeController < ApplicationController
 	     :token_url => '/oauth/access_token'
 	  )
 	end	
+
+	# def determine_layout
+ #    current_attendee ? "private" : "public"
+ #  end
 
 
 end
