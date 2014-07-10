@@ -1,103 +1,100 @@
+/*Layout*/
 
-.home{
-	background-color: #CCFF99;
-	width: 100%;
-	max-height: 100%;
+/*home page*/
 
-}
 
-.content{
-	text-align: center;
-	text-decoration: none;
-	margin-top: 15%;
-}
-
-h1{
-	font-family: 'Raleway', sans-serif;
-	font-size: 5rem;
-	font: white;
-	padding: 0%;
-	margin-bottom: -2%;
-
-}
-
-p{
-	font-family: 'PT Serif', sans-serif;
-	font-size: 1rem;
-	padding: 0%;
-}
+html {
+  background: url(http://www.revolution9.co.uk/images/Canary-Wharf-21.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+ }
 
 ul{
-	list-style-type: none;
-/*	margin-left: 37%;*/
+	list-style: none;
+}
+ body {
+   background-color: rgba(255,255,255,0.6);
+ }
+
+ .wrapper{
+ 	min-height: 900px;
+ }
+
+#nav{
+	padding-top: 1px;
+
 }
 
-li{
-	float: left;
+#login_nav {
+	list-style: none;
+	float: right;
+	margin-top:auto;
+	padding-top: 10px;
+	width:100%;
+	height: 30px;
+	background-color: #D6EBFF;
 }
 
 a{
 	text-decoration: none;
+	color: white;
 }
 
-.one{
-	list-style-position: inside;
-	margin-right: -16%;
+#one{
+	float: left;
+	margin-left: 1000px;
 }
 
-.two{
-	margin-left: 20%;
-	margin-right: 20%;
-}
-#navigation{
-	text-align: centre;
-}
-
-.show{
-	background-color: white;
-}
-
-h2{
-	font-family: 'Raleway', sans-serif;
-	font-size: 4rem;
-}
-
-#profile_content{
-	margin-top: 8%;
-	margin-left: 10px;
-}
-#events{
-	display: inline-block;
-
-}
- 
-#map_n_cal{
+#two{
 	float: right;
-	margin-right: 5%;
+	margin-right: 50px;
+}
+#logo_tag{
+	width: 570px;
+	height: 380px;
+	color: white;
+	margin-left: 270px;
+	margin-top: 117px;
+
 }
 
-#map{
-	background-color: yellow;
-	width: 624px;
-	height: 424px;
-	display: block;
-	float: right;
-	border: 4px solid pink;
-	border-radius: 5px;
-	margin-bottom: 5%;
+#title{
+	font-family: 'Signika', sans-serif;
+	text-align: center;
+	padding-top: 121px;
+	font-size: 6rem;
+	color: #D6EBFF;
 }
 
-.event{
-	margin:10px;
-	padding: 10px;
-	border: 2px solid grey;
-	border-radius: 8px;
-	font-size: 1rem;
-	width: 10rem;
-	height: 3rem;
+#tagline{
 	text-align: center;
 }
 
+/*attendee show*/
+
+#all_events{
+	float:left;
+	width: 500px;
+}
+.event input{
+	background-color: rgba(255,255,255,0.6);
+	border: 0px solid black;
+	padding: 7px;
+	cursor: pointer;
+
+}
+
+.main{
+	width:900px;
+	margin: auto;
+}
+
+#my_events{
+	float: right;
+
+}
 
 .clear {
   clear: both;
