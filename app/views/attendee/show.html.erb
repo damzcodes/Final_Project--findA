@@ -19,8 +19,9 @@
 	<% end %>
 	</div>
 		
-		<h3> All events </h3>
+		
 		<div id="all_events">
+		<h3> All events </h3>
 			<ul id="events">
 			<% @events.each do |event| %>
 				<li class="event" data-latitude="<%=event.lat%>" data-longitude="<%=event.lng%>">

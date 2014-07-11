@@ -44,12 +44,14 @@ a{
 
 #one{
 	float: left;
-	margin-left: 1000px;
+	margin-left: 849px;
+	margin-top: -7px;
 }
 
 #two{
 	float: right;
-	margin-right: 50px;
+	margin-right: 100px;
+	margin-top: -28px;
 }
 #logo_tag{
 	width: 570px;
@@ -77,6 +79,7 @@ a{
 #all_events{
 	float:left;
 	width: 500px;
+	margin-left: 82px
 }
 .event input{
 	background-color: rgba(255,255,255,0.6);
