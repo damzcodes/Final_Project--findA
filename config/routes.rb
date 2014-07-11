@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   devise_for :pastors
-  devise_for :churches
   root to: 'home#index'
 
   resources :home, :only => [:index]
