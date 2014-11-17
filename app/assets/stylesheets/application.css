@@ -114,3 +114,34 @@ word-spacing: 10px
 .clear {
   clear: both;
 }
+
+/*Search Results*/
+
+.search_results{
+	text-align: center;
+	padding: 20px;
+}
+
+.event_info{
+	border: 2px solid black;
+	border-radius: 9px;
+	padding: 5px;
+	background-color: white;
+	box-shadow: 10px 5px 5px black;
+}
+
+.event_name{
+	font-size: 1.5rem;
+}
+
+.church_info{
+	border: 2px solid black;
+	border-radius: 9px;
+	padding: 5px;
+	background-color: white;
+	box-shadow: 10px 5px 5px black;
+}
+
+.church_name{
+	font-size: 1.5rem;
+}

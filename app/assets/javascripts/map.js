@@ -1,7 +1,7 @@
 var map;
 
 $(document).ready(function(){
- 
+ 	
 	var options = {
     zoom: 8,
     center: new google.maps.LatLng(51.50, 0.12)
@@ -10,12 +10,19 @@ $(document).ready(function(){
 
 	events = $(".events");
 
-	for(var i=0; i<events.length; i++){
-		var lat = $(events[i]).data("latitude");
-		var lng = $(events[i]).data("longitude");
-		addMarker(lat, lng);
-	}
-	
+	// $(".search_button").click(function(e){
+	//     e.preventDefault();
+		for(var i=0; i<events.length; i++){
+			var lat = $(events[i]).data("latitude");
+			var lng = $(events[i]).data("longitude");
+	// 		var marker = new google.maps.Marker({
+	// 		// 	position: new google.maps.LatLng(lat, lng),
+	// 		// 	map: map
+	// 		// });
+
+	// 		addMarker(lat, lng);
+		}
+	// })
 });
 
 function addMarker(lat, lng){
@@ -24,8 +31,8 @@ function addMarker(lat, lng){
 		map: map
 	});
 
-	google.maps.event.addListener(marker, 'click', function(){
-		map.setZoom(16);
-		map.setCentre(marker.getPosition());
-	});
+google.maps.event.addListener(marker, 'click', function(){
+	map.setZoom(16);
+	map.setCentre(marker.getPosition());
+});
 }

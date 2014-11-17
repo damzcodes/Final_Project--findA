@@ -1,12 +1,32 @@
 
-<h2> Local Churches </h2>
+<h2 class="search_results"> Search Results </h2>
 
 <div id="local_churches">
-<% @search.each do |church| %>
-	<ul>
-		<div>
-			<li><%= church.name %> </li> <br/>
-			<li><%= church.address %></li>
-		</div>
-	</ul>
-<%end%>
+	<% @search_ch.each do |church| %>
+		<ul>
+			<div class="church_info">
+				<li class="church_name"><%= church.name %> </li> <br/>
+				<li class="church_add"><%= church.address %></li>
+			</div>
+		</ul>
+	<%end%>
+</div>
+
+<div id="local_events">
+	<% @search_ev.each do |event| %>
+		<ul>
+			<div class="event_info">
+				<li class="event_name"><%= event.name %> </li> <br/>
+				<li class="event_add"><%= event.address %></li>
+				<li class="event_date"><%= event.date %></li>
+				<li class="start"><%= event.start_time %></li>
+				<li class="end"><%= event.end_time %></li>
+				<li class="event_type"><%= event.event_type %></li>
+			</div>
+		</ul>
+	<%end%>
+</div>
+
+<div id="map"> </div>
+<div class="clear"></div>
+

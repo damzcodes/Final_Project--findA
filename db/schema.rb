@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20140709185218) do
   create_table "church_events", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "event_id"
   end
 
   create_table "churches", force: true do |t|

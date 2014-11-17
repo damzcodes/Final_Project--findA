@@ -11,6 +11,7 @@ class EventController < ApplicationController
 
 	def create
 		@event = Event.new(allowed_params)
+		binding.pry
 		if @event.save
 			respond_to do |format|
 				format.html {redirect_to event_index_path, :notice => "Your event has been saved"}
@@ -32,7 +33,7 @@ class EventController < ApplicationController
 
 private
 def allowed_params
-	params.require(:event).permit(:name, :address, :start_time, :end_time, :event_type, :description, :date)
+	params.require(:event).permit(:name, :address, :start_time, :end_time, :event_type, :description, :date, :church_id)
 end
 
 end
