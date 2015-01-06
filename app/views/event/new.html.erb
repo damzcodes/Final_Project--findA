@@ -1,45 +1,45 @@
-	<div class="event_form">
+<div class="event_form">
 
 	<%= form_for @event, :remote => true, :url => event_index_path do |e| %>
-				<%= field_set_tag do %>
-					<%= e.label :name %>
-					<%= e.text_field :name %>
-				<% end %>
+		<%= field_set_tag do %>
+			<%= e.label :name %>
+			<%= e.text_field :name %>
+		<% end %>
 
-				<%= field_set_tag do %>
-					<%= e.label :event_type %>
-					<%= e.text_field :event_type %>
-				<%end %>
+		<%= field_set_tag do %>
+			<%= e.label :event_type %>
+			<%= e.text_field :event_type %>
+		<%end %>
 
-				<%= field_set_tag do %>
-					<%= e.label :address %>
-					<%= e.text_field :address %>
-				<% end %>
+		<%= field_set_tag do %>
+			<%= e.label :address %>
+			<%= e.text_field :address %>
+		<% end %>
 
-				<%= field_set_tag do %>
-					<%= e.label :description %>
-					<%= e.text_field :description %>
-				<% end %>
+		<%= field_set_tag do %>
+			<%= e.label :description %>
+			<%= e.text_field :description %>
+		<% end %>
 
-				<%= field_set_tag do %>
-					<%= e.label :date %>
-					<%= e.text_field :date %>
-				<% end %>
+		<%= field_set_tag do %>
+			<%= e.label :date %>
+			<%= e.text_field :date %>
+		<% end %>
 
-				<%= field_set_tag do %>
-					<%= e.label :start_time %>
-					<%= e.text_field :start_time %>
-				<% end %>
+		<%= field_set_tag do %>
+			<%= e.label :start_time %>
+			<%= e.text_field :start_time %>
+		<% end %>
 
-				<%= field_set_tag do %>
-					<%= e.label :end_time %>
-					<%= e.text_field :end_time %>
-				<% end %>
+		<%= field_set_tag do %>
+			<%= e.label :end_time %>
+			<%= e.text_field :end_time %>
+		<% end %>
 
-				<%= field_set_tag do %>
-					<%= e.hidden_field :church_id %>
-				<% end %>
+		<%= field_set_tag do %>
+			<%= e.hidden_field :church_id %>
+		<% end %>
 
-				<%= e.submit %>
-			<% end %> 
-			</div>
+		<%= e.submit %>
+	<% end %> 
+</div>
