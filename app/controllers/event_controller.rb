@@ -11,7 +11,6 @@ class EventController < ApplicationController
 
 	def create
 		@event = Event.new(allowed_params)
-		binding.pry
 		if @event.save
 			respond_to do |format|
 				format.html {redirect_to event_index_path, :notice => "Your event has been saved"}
