@@ -22,7 +22,7 @@
 			<% @events.each do |event| %>
 				<li class="event" data-latitude="<%=event.lat%>" data-longitude="<%=event.lng%>">
 					<%= event.name %> <%= event.event_type %> <%= event.date %> <%= event.church.name %>
-					<%= button_to "Attend", event_attendee_index_path(event_id: event.id, attendee_id: session[:attendee_id]), remote: true %>
+					<%= button_to "Attend", event_attendee_index_path(event_id: event.id, attendee_id: session[:attendee_id]), id: "attend", remote: true, data:{disable_with: "Attending"} %>
 				</li> </br>
 			<% end %>
 			</ul>
